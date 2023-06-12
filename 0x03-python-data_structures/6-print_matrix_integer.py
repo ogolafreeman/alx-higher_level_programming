@@ -1,12 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     """Looping to print matrix integer"""
-    for x in matrix:
-        l = 1
-        for y in x:
-            if l == len(x):
-                print("{:d}".format(y), end="")
-            else:
-                print("{:d}".format(y), end=" ")
-            l = l + 1
+     for row in matrix:
+        for col in row:
+            print("{:d}".format(col), end=" " if col != row[-1] else "")
         print()
