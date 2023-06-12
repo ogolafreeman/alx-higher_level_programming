@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
+    """Looping to print matrix integer"""
     for x in matrix:
         l = 1
         for y in x:
