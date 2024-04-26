@@ -1,13 +1,10 @@
+#!/usr/bin/python3
+"""Fetches https://alx-intranet.hbtn.io/status."""
 import requests
 
-url = 'https://alx-intranet.hbtn.io/status'
 
-response = requests.get(url)
-
-if response.status_code == 200:
-    data = response.json()
+if __name__ == "__main__":
+    r = requests.get("https://alx-intranet.hbtn.io/status")
     print("Body response:")
-    print("\t- type:", type(data))
-    print("\t- content:", data)
-else:
-    print("Failed to fetch data from the URL:", url)
+    print("\t- type: {}".format(type(r.text)))
+    print("\t- content: {}".format(r.text))
