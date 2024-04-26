@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Displays the value of the X-Request-Id variable
-found in the header of the response
+Display value of the X-Request-Id variable
+found in the header
 """
 import requests
 from sys import argv
@@ -9,9 +9,9 @@ from sys import argv
 
 def main(argv):
     """
-    Method that takes in a URL, sends a request to the URL
+    This method that takes in a URL, sends a request to the URL
     and displays the value of the X-Request-Id variable
-    found in the header of the response
+    found in the header
     """
     url = argv[1]
     r = requests.get(url)
